@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CoursesComponent } from './courses/courses.component';
-import { AuthorsComponent } from './authors/authors.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { AuthorsComponent } from './components/authors/authors.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
