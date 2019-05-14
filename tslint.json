@@ -62,6 +62,13 @@
         ],
         "trailing-comma": false,
         "no-output-on-prefix": true,
+        // disable kebab-case component name
+        "component-selector": [
+            false,
+            "element",
+            "<%= prefix %>",
+            "kebab-case"
+        ],
         "use-input-property-decorator": true,
         "use-output-property-decorator": true,
         "use-host-property-decorator": true,
@@ -71,7 +78,7 @@
         "use-pipe-transform-interface": true,
         "component-class-suffix": true,
         "directive-class-suffix": true,
-        // disable new line ath the end
-        "eofline": false
+        // disable new line at the end
+        "eofline": false,
     }
 }
