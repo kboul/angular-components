@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { items } from './items';
 
 @Component({
     selector: 'navbar',
@@ -6,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./navbar.component.sass']
 })
 
-export class NavbarComponent implements OnInit {
-
-    constructor() { }
-
-    ngOnInit() {
-    }
-
+export class NavbarComponent {
+    items: Array<String>;
+    navbarItems = items
 }
