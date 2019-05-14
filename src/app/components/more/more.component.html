@@ -3,7 +3,7 @@
     (change)="onFavoriteChanged($event)">
 </favorite>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 
 <bootstrap-panel>
     <ng-container class="heading">
@@ -15,7 +15,7 @@
     </div>
 </bootstrap-panel>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 <h2>Property Binding</h2>
 
 <like 
@@ -23,7 +23,7 @@
     [likesCount]="tweet.likesCount">
 </like>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 <h2>ng-template & template variable</h2>
 
 <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
@@ -34,7 +34,7 @@
     No courses yet
 </ng-template>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 
 <ul class="nav nav-pills">
     <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
@@ -46,7 +46,7 @@
     <div *ngSwitchDefault>Otherwise</div>
 </div>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 <h2>ngStyle</h2>
 
 <button 
@@ -59,8 +59,20 @@
     Save
 </button>
 
-<hr style="height: 1px; border-top: 1px solid black;">
+<hr class="hrBlack">
 <h2>Custom Directive</h2>
 
 <!-- Custom Directive -->
 <input type="text" [inputFormat]="uppercase">
+
+<hr class="hrBlack">
+<h2>Bootstrap Accordion using @Input Decorator</h2>
+
+<!-- Bootstrap Accordion -->
+<zippy title="Shipping Details">
+    Shippy Details Content
+</zippy>
+
+<zippy title="Billing Details">
+    Billing Details Content
+</zippy>
