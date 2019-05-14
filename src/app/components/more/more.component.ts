@@ -8,7 +8,6 @@ import { FavoriteChangedEventArgs } from '../../models/favoriteChangedEventArgs'
 })
 
 export class MoreComponent {
-
     star = {
         isFavorite: true
     }
