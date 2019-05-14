@@ -4,6 +4,7 @@ import { AuthorsComponent } from './components/authors/authors.component';
 import { MoreComponent } from './components/more/more.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
+import { SignupFormComponent } from './components/signup-form/signup-form.component';
 
 export const routes: Routes = [
     { path: 'courses', component: CoursesComponent },
@@ -11,5 +12,6 @@ export const routes: Routes = [
     { path: 'more', component: MoreComponent },
     { path: 'contact', component: ContactFormComponent },
     { path: 'course', component: CourseFormComponent },
+    { path: 'signup', component: SignupFormComponent },
     { path: '', redirectTo: '/courses', pathMatch: 'full' }
 ];

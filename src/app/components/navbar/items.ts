@@ -3,5 +3,6 @@ export const items = [
     { url: 'authors', name: 'Authors' },
     { url: 'more', name: 'More' },
     { url: 'contact', name: 'Contact' },
-    { url: 'course', name: 'Course' }
+    { url: 'course', name: 'Course' },
+    { url: 'signup', name: 'Sign Up' }
 ]
