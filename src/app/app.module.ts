@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { AuthorsComponent } from './components/authors/authors.component';
+import { MoreComponent } from './components/more/more.component';
 import { FavoriteComponent } from './components/favorite/favorite.component';
+import { BootstrapPanelComponent } from './components/bootstrap-panel/bootstrap-panel.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -27,7 +29,9 @@ import { routes } from './routes';
         SummaryPipe,
         TitleCasePipe,
         AuthorsComponent,
-        FavoriteComponent
+        MoreComponent,
+        FavoriteComponent,
+        BootstrapPanelComponent,
     ],
     imports: [
         BrowserModule,
