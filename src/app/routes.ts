@@ -7,6 +7,7 @@ import { CourseFormComponent } from './components/course-form/course-form.compon
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { ChangePasswordFormComponent } from './components/change-password-form/change-password-form.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { GithubFollowersComponent } from './components/github-followers/github-followers.component';
 
 export const routes: Routes = [
     { path: 'courses', component: CoursesComponent },
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: 'signup', component: SignupFormComponent },
     { path: 'change-password', component: ChangePasswordFormComponent },
     { path: 'posts', component: PostsComponent },
+    { path: 'github-followers', component: GithubFollowersComponent },
     { path: '', redirectTo: '/courses', pathMatch: 'full' }
 ];

@@ -6,5 +6,6 @@ export const items = [
     { url: 'course', name: 'Course' },
     { url: 'signup', name: 'Sign Up' },
     { url: 'change-password', name: 'Change Password' },
-    { url: 'posts', name: 'Posts' }
+    { url: 'posts', name: 'Posts' },
+    { url: 'github-followers', name: 'Github Followers' }
 ]

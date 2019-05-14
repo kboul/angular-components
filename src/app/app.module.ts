@@ -18,6 +18,7 @@ import { CourseFormComponent } from './components/course-form/course-form.compon
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { ChangePasswordFormComponent } from './components/change-password-form/change-password-form.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { GithubFollowersComponent } from './components/github-followers/github-followers.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -26,6 +27,7 @@ import { TitleCasePipe } from './pipes/title-case.pipe';
 import { CoursesService } from './services/courses.service';
 import { AuthorsService } from './services/authors.service';
 import { PostService } from './services/post.service';
+import { GithubService } from './services/github.service';
 
 import { InputFormatDirective } from './directives/input-format.directive';
 
@@ -50,7 +52,8 @@ import { routes } from './routes';
         CourseFormComponent,
         SignupFormComponent,
         ChangePasswordFormComponent,
-        PostsComponent
+        PostsComponent,
+        GithubFollowersComponent
     ],
     imports: [
         BrowserModule,
@@ -62,7 +65,8 @@ import { routes } from './routes';
     providers: [
         CoursesService,
         AuthorsService,
-        PostService
+        PostService,
+        GithubService
     ],
     bootstrap: [AppComponent]
 })
