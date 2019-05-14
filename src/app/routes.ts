@@ -6,6 +6,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { ChangePasswordFormComponent } from './components/change-password-form/change-password-form.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 export const routes: Routes = [
     { path: 'courses', component: CoursesComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: 'course', component: CourseFormComponent },
     { path: 'signup', component: SignupFormComponent },
     { path: 'change-password', component: ChangePasswordFormComponent },
+    { path: 'posts', component: PostsComponent },
     { path: '', redirectTo: '/courses', pathMatch: 'full' }
 ];

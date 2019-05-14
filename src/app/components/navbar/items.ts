@@ -5,5 +5,6 @@ export const items = [
     { url: 'contact', name: 'Contact' },
     { url: 'course', name: 'Course' },
     { url: 'signup', name: 'Sign Up' },
-    { url: 'change-password', name: 'Change Password' }
+    { url: 'change-password', name: 'Change Password' },
+    { url: 'posts', name: 'Posts' }
 ]

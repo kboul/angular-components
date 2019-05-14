@@ -1,0 +1,10 @@
+// Class which is responsible to handle all unexpected exceptions globally
+
+import { ErrorHandler } from '@angular/core';
+
+export class AppErrorHandler implements ErrorHandler {
+    handleError(error) {
+        alert('An unexpected error occured.');
+        console.log(error);
+    }
+}

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -16,6 +17,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { ChangePasswordFormComponent } from './components/change-password-form/change-password-form.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -23,6 +25,7 @@ import { TitleCasePipe } from './pipes/title-case.pipe';
 
 import { CoursesService } from './services/courses.service';
 import { AuthorsService } from './services/authors.service';
+import { PostService } from './services/post.service';
 
 import { InputFormatDirective } from './directives/input-format.directive';
 
@@ -46,17 +49,20 @@ import { routes } from './routes';
         ContactFormComponent,
         CourseFormComponent,
         SignupFormComponent,
-        ChangePasswordFormComponent
+        ChangePasswordFormComponent,
+        PostsComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
+        HttpClientModule,
         RouterModule.forRoot(routes)
     ],
     providers: [
         CoursesService,
-        AuthorsService
+        AuthorsService,
+        PostService
     ],
     bootstrap: [AppComponent]
 })
