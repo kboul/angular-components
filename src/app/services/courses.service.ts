@@ -1,4 +1,4 @@
-import { Courses } from '../model/courses';
+import { Courses } from '../models/courses';
 
 export class CoursesService {
     getCourses(): Array<Courses> {
