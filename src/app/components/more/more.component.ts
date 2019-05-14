@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FavoriteChangedEventArgs } from '../../models/favoriteChangedEventArgs';
+import { FavoriteChangedEventArgs } from '../../models/favorite-changed-event-args';
 
 @Component({
     selector: 'app-more',
