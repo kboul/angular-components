@@ -19,6 +19,8 @@ import { TitleCasePipe } from './pipes/title-case.pipe';
 import { CoursesService } from './services/courses.service';
 import { AuthorsService } from './services/authors.service';
 
+import { InputFormatDirective } from './directives/input-format.directive';
+
 import { routes } from './routes';
 
 @NgModule({
@@ -33,7 +35,8 @@ import { routes } from './routes';
         MoreComponent,
         FavoriteComponent,
         BootstrapPanelComponent,
-        LikeComponent
+        LikeComponent,
+        InputFormatDirective
     ],
     imports: [
         BrowserModule,
