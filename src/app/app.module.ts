@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { AuthorsComponent } from './components/authors/authors.component';
+import { FavoriteComponent } from './components/favorite/favorite.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -15,11 +16,7 @@ import { TitleCasePipe } from './pipes/title-case.pipe';
 import { CoursesService } from './services/courses.service';
 import { AuthorsService } from './services/authors.service';
 
-const routes: Routes = [
-    { path: 'courses', component: CoursesComponent },
-    { path: 'authors', component: AuthorsComponent },
-    { path: '', redirectTo: '/courses', pathMatch: 'full' }
-];
+import { routes } from './routes';
 
 @NgModule({
     declarations: [
@@ -29,7 +26,8 @@ const routes: Routes = [
         EuroPipe,
         SummaryPipe,
         TitleCasePipe,
-        AuthorsComponent
+        AuthorsComponent,
+        FavoriteComponent
     ],
     imports: [
         BrowserModule,
