@@ -15,6 +15,7 @@ import { ZippyComponent } from './components/zippy/zippy.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { ChangePasswordFormComponent } from './components/change-password-form/change-password-form.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -44,7 +45,8 @@ import { routes } from './routes';
         ZippyComponent,
         ContactFormComponent,
         CourseFormComponent,
-        SignupFormComponent
+        SignupFormComponent,
+        ChangePasswordFormComponent
     ],
     imports: [
         BrowserModule,
