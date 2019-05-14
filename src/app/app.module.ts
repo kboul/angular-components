@@ -12,6 +12,7 @@ import { FavoriteComponent } from './components/favorite/favorite.component';
 import { BootstrapPanelComponent } from './components/bootstrap-panel/bootstrap-panel.component';
 import { LikeComponent } from './components/like/like.component';
 import { ZippyComponent } from './components/zippy/zippy.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 import { EuroPipe } from './pipes/euro.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -38,7 +39,8 @@ import { routes } from './routes';
         BootstrapPanelComponent,
         LikeComponent,
         InputFormatDirective,
-        ZippyComponent
+        ZippyComponent,
+        ContactFormComponent
     ],
     imports: [
         BrowserModule,
