@@ -79,6 +79,6 @@
         "component-class-suffix": true,
         "directive-class-suffix": true,
         // disable new line at the end
-        "eofline": false,
+        "eofline": false
     }
 }
