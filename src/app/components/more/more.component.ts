@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FavoriteChangedEventArgs } from '../../models/favorite-changed-event-args';
+import { Tweet } from '../../models/tweet';
 
 @Component({
     selector: 'app-more',
@@ -16,7 +17,7 @@ export class MoreComponent {
         console.log("clicked status is currently", stateOfIsFavorite);
     }
 
-    tweet: Object = {
+    tweet: Tweet = {
         isLiked: false,
         likesCount: 10
     }
