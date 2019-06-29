@@ -27,7 +27,7 @@ import { TitleCasePipe } from './pipes/title-case.pipe';
 import { CoursesService } from './services/courses.service';
 import { AuthorsService } from './services/authors.service';
 import { PostService } from './services/post.service';
-import { GithubService } from './services/github.service';
+import { GithubFollowersService } from './services/github-followers.service';
 
 import { InputFormatDirective } from './directives/input-format.directive';
 
@@ -66,7 +66,7 @@ import { routes } from './routes';
         CoursesService,
         AuthorsService,
         PostService,
-        GithubService
+        GithubFollowersService
     ],
     bootstrap: [AppComponent]
 })

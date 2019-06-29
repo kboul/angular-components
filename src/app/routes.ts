@@ -19,5 +19,6 @@ export const routes: Routes = [
     { path: 'change-password', component: ChangePasswordFormComponent },
     { path: 'posts', component: PostsComponent },
     { path: 'github-followers', component: GithubFollowersComponent },
+    { path: 'github-followers/:id/:login', component: GithubFollowersComponent },
     { path: '', redirectTo: '/courses', pathMatch: 'full' }
 ];
