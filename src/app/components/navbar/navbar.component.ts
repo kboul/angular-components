@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { items } from './items';
+import { environment } from 'src/environments/environment';
 
 @Component({
     selector: 'navbar',
@@ -9,5 +10,6 @@ import { items } from './items';
 
 export class NavbarComponent {
     items: Array<String>;
-    navbarItems = items
+    navbarItems = items;
+    backgroundColor = environment.navBarBackgroundColor;
 }
