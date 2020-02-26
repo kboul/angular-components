@@ -1,3 +1,3 @@
 export interface FavoriteChangedEventArgs {
-    newValue: boolean
+	newValue: boolean;
 }

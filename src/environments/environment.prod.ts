@@ -2,6 +2,6 @@
 // stored in environment.prod.ts
 
 export const environment = {
-    production: true,
-    navBarBackgroundColor: 'red'
+	production: true,
+	navBarBackgroundColor: "red"
 };

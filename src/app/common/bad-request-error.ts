@@ -1,5 +1,5 @@
-import { AppError } from '../common/app-error';
+import { AppError } from "../common/app-error";
 
-// Extend the App error class to be more specific and name it 
+// Extend the App error class to be more specific and name it
 // NotFoundError, we could make the same for BadRequestError
-export class BadRequestError extends AppError { }
+export class BadRequestError extends AppError {}

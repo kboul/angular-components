@@ -1,30 +1,33 @@
-import { UsernameValidators } from './username.validators';
-import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UsernameValidators } from "./username.validators";
+import { Component } from "@angular/core";
+import { FormGroup, FormControl, Validators } from "@angular/forms";
 
 @Component({
-    selector: 'signup-form',
-    templateUrl: './signup-form.component.html',
-    styleUrls: ['./signup-form.component.sass']
+	selector: "signup-form",
+	templateUrl: "./signup-form.component.html",
+	styleUrls: ["./signup-form.component.sass"]
 })
-
 export class SignupFormComponent {
-    form = new FormGroup({
-        'username': new FormControl('', [
-            Validators.required,
-            Validators.minLength(3),
-            UsernameValidators.cannotContainSpace
-        ], UsernameValidators.isUsed),
-        'password': new FormControl('', Validators.required)
-    });
+	form = new FormGroup({
+		username: new FormControl(
+			"",
+			[
+				Validators.required,
+				Validators.minLength(3),
+				UsernameValidators.cannotContainSpace
+			],
+			UsernameValidators.isUsed
+		),
+		password: new FormControl("", Validators.required)
+	});
 
-    login() {
-        this.form.setErrors({
-            invalidLogin: true
-        })
-    }
+	login() {
+		this.form.setErrors({
+			invalidLogin: true
+		});
+	}
 
-    get username() {
-        return this.form.get('username');
-    }
+	get username() {
+		return this.form.get("username");
+	}
 }

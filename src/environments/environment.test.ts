@@ -2,6 +2,6 @@
 // stored in environment.test.ts
 
 export const environment = {
-    production: false,
-    navBarBackgroundColor: 'purple'
+	production: false,
+	navBarBackgroundColor: "purple"
 };

@@ -1,4 +1,4 @@
 export interface Tweet {
-    isLiked: boolean;
-    likesCount: number;
+	isLiked: boolean;
+	likesCount: number;
 }

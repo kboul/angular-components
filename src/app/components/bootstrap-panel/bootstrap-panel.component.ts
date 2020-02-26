@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'bootstrap-panel',
-    templateUrl: './bootstrap-panel.component.html',
-    styleUrls: ['./bootstrap-panel.component.sass']
+	selector: "bootstrap-panel",
+	templateUrl: "./bootstrap-panel.component.html",
+	styleUrls: ["./bootstrap-panel.component.sass"]
 })
-
-export class BootstrapPanelComponent { }
+export class BootstrapPanelComponent {}

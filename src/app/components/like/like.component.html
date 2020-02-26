@@ -1,7 +1,8 @@
-<span 
-    class="like fa fa-heart" 
-    [ngClass]="{'not-liked': !isActive, 'liked': isActive }" 
-    (click)="toggle()">
+<span
+	class="like fa fa-heart"
+	[ngClass]="{ 'not-liked': !isActive, liked: isActive }"
+	(click)="toggle()"
+>
 </span>
 
-{{likesCount}}
+{{ likesCount }}
