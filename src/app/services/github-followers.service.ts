@@ -3,8 +3,7 @@ import { HttpClient } from "@angular/common/http";
 
 @Injectable()
 export class GithubFollowersService {
-	private readonly _url =
-		"https://api.github.com/users/mosh-hamedani/followers";
+	private readonly _url = "https://api.github.com/users/kboul/followers";
 
 	constructor(private http: HttpClient) {}
 
