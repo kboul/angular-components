@@ -60,7 +60,7 @@ import { routes } from "./routes";
 		FormsModule,
 		ReactiveFormsModule,
 		HttpClientModule,
-		RouterModule.forRoot(routes)
+		RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })
 	],
 	providers: [
 		CoursesService,
