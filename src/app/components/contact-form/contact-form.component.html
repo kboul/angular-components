@@ -1,8 +1,6 @@
 <form #f="ngForm" (ngSubmit)="submit(f)">
-	<div class="form-group">
-		<label for="firstName">
-			First Name
-		</label>
+	<div class="mb-3">
+		<label for="firstName"> First Name </label>
 		<input
 			required
 			minlength="3"
@@ -20,9 +18,7 @@
 			class="alert alert-danger"
 			*ngIf="firstName.touched && firstName.invalid"
 		>
-			<div *ngIf="firstName.errors.required">
-				First Name is required.
-			</div>
+			<div *ngIf="firstName.errors.required">First Name is required.</div>
 			<div *ngIf="firstName.errors.minlength">
 				First Name should be minimum
 				{{ firstName.errors.minlength.requiredLength }} characters.
@@ -32,7 +28,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="form-group">
+	<div class="mb-3">
 		<label for="comment">Comment</label>
 		<textarea
 			ngModel
@@ -44,15 +40,13 @@
 			class="form-control"
 		>
 		</textarea>
-		<div class="checkbox">
+		<div class="checkbox mb-3">
 			<label>
 				<input ngModel name="isSubscribed" type="checkbox" />
 			</label>
 		</div>
-		<div class="form-group">
-			<label for="contactMethod">
-				Contact Method
-			</label>
+		<div class="mb-3">
+			<label for="contactMethod"> Contact Method </label>
 			<select
 				ngModel
 				name="contactMethod"
@@ -79,11 +73,10 @@
 				{{ contact.name }}
 			</label>
 		</div>
-		<p>
-			{{ f.value | json }}
-		</p>
 	</div>
-	<button class="btn btn-primary" [disabled]="f.invalid">
-		Submit
-	</button>
+	<button class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+
+	<p class="mt-3">
+		{{ f.value | json }}
+	</p>
 </form>
