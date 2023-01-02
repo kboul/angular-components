@@ -22,7 +22,11 @@
 					*ngFor="let navbarItem of navbarItems"
 					routerLinkActive="active"
 				>
-					<a class="nav-link" routerLink="{{ navbarItem.url }}">
+					<a
+						class="nav-link"
+						routerLink="{{ navbarItem.url }}"
+						[routerLinkActive]="['active']"
+					>
 						{{ navbarItem.name }}
 					</a>
 				</li>
