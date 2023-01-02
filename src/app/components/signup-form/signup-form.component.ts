@@ -1,6 +1,6 @@
 import { UsernameValidators } from "./username.validators";
 import { Component } from "@angular/core";
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 
 @Component({
 	selector: "signup-form",
@@ -8,8 +8,8 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 	styleUrls: ["./signup-form.component.sass"]
 })
 export class SignupFormComponent {
-	form = new FormGroup({
-		username: new FormControl(
+	form = new UntypedFormGroup({
+		username: new UntypedFormControl(
 			"",
 			[
 				Validators.required,
@@ -18,7 +18,7 @@ export class SignupFormComponent {
 			],
 			UsernameValidators.isUsed
 		),
-		password: new FormControl("", Validators.required)
+		password: new UntypedFormControl("", Validators.required)
 	});
 
 	login() {

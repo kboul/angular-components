@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { PasswordValidators } from "./../change-password-form/password.validators";
 
 @Component({
@@ -8,15 +8,15 @@ import { PasswordValidators } from "./../change-password-form/password.validator
 	styleUrls: ["./change-password-form.component.css"]
 })
 export class ChangePasswordFormComponent {
-	form = new FormGroup(
+	form = new UntypedFormGroup(
 		{
-			oldPassword: new FormControl(
+			oldPassword: new UntypedFormControl(
 				"",
 				Validators.required,
 				PasswordValidators.validOldPassword
 			),
-			newPassword: new FormControl("", Validators.required),
-			confirmPassword: new FormControl("", Validators.required)
+			newPassword: new UntypedFormControl("", Validators.required),
+			confirmPassword: new UntypedFormControl("", Validators.required)
 		},
 		{ validators: PasswordValidators.passwordMatchValidator }
 	);

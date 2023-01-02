@@ -138,8 +138,7 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "angular-components",
+  },
 	"cli": {
 		"analytics": false
 	}
