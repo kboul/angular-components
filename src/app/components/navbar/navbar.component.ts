@@ -9,6 +9,8 @@ import { environment } from "src/environments/environment";
 })
 export class NavbarComponent {
 	items: Array<String>;
+
 	navbarItems = items;
+
 	backgroundColor = environment.navBarBackgroundColor;
 }

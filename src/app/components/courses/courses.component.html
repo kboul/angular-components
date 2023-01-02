@@ -1,47 +1,49 @@
-<h2>{{ title }}</h2>
-<button class="btn btn-primary" (click)="loadExtraCourses()">
-	Load Extra Courses
-</button>
+<div style="display: flex; flex-direction: column">
+	<div>
+		<h2>{{ title }}</h2>
+		<button class="btn btn-primary" (click)="loadExtraCourses()">
+			Load Extra Courses
+		</button>
+	</div>
 
-<ul>
-	<li *ngFor="let course of courses">
-		{{ course.name }}
-	</li>
-</ul>
-<ul>
-	<li *ngFor="let course of extraCourses; trackBy: trackExtraCourse">
-		{{ course.name }}
-	</li>
-</ul>
+	<ul>
+		<li *ngFor="let course of courses">
+			{{ course.name }}
+		</li>
+	</ul>
+	<ul>
+		<li *ngFor="let course of extraCourses; trackBy: trackExtraCourse">
+			{{ course.name }}
+		</li>
+	</ul>
 
-<br /><br />
+	<div class="mb-3" style="display: flex; gap: 5px">
+		<button class="btn btn-primary" [class.active]="isActive">Save</button>
 
-<button class="btn btn-primary" [class.active]="isActive">Save</button>
+		<button
+			class="btn btn-primary"
+			[style.backgroundColor]="isActive ? 'blue' : 'red'"
+		>
+			Submit
+		</button>
 
-<button
-	class="btn btn-primary"
-	[style.backgroundColor]="isActive ? 'blue' : 'red'"
->
-	Submit
-</button>
+		<button class="btn btn-primary" (click)="log($event)">Console</button>
 
-<button class="btn btn-primary" (click)="log($event)">
-	Console
-</button>
+		<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+	</div>
 
-<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+	<div>
+		{{ course.title | uppercase }} <br />
+		{{ course.rating | number : "1.1-1" }} <br />
+		{{ course.students | number }} <br />
+		{{ course.price | euro }} <br />
+		{{ course.releaseDate | date : "fullDate" }} <br /><br />
 
-<br /><br />
+		{{ text | summary : 10 }}
+	</div>
 
-{{ course.title | uppercase }} <br />
-{{ course.rating | number: "1.1-1" }} <br />
-{{ course.students | number }} <br />
-{{ course.price | euro }} <br />
-{{ course.releaseDate | date: "fullDate" }} <br /><br />
-
-{{ text | summary: 10 }}
-
-<br /><br />
-
-<input [(ngModel)]="name" />
-{{ name | titleCase }}
+	<div>
+		<input [(ngModel)]="name" />
+		{{ name | titleCase }}
+	</div>
+</div>

@@ -7,9 +7,7 @@ import { Component, Input } from "@angular/core";
 })
 export class ZippyComponent {
 	@Input() title: string;
-	isExpanded: boolean = false;
+	@Input() id: string;
 
-	onClick() {
-		this.isExpanded = !this.isExpanded;
-	}
+	openAccordion = { ship: true, bill: false };
 }

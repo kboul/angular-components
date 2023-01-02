@@ -1,12 +1,12 @@
-<h1>My Followers</h1>
+<h1 class="mb-5">My Followers</h1>
 
-<div class="media" *ngFor="let follower of followers">
+<div class="mb-3" style="display: flex" *ngFor="let follower of followers">
 	<img
 		src="{{ follower.avatar_url }}"
-		class="mr-3 round-avatar"
+		class="me-3 round-avatar"
 		alt="{{ follower.avatar_url }}"
 	/>
-	<div class="media-body">
+	<div>
 		<h5 class="mt-0">
 			<a
 				[routerLink]="[

@@ -2,10 +2,8 @@
 	<div *ngIf="form.errors" class="alert alert-danger">
 		The username or password is invalid.
 	</div>
-	<div class="form-group">
-		<label for="username">
-			Username
-		</label>
+	<div class="mb-3">
+		<label for="username"> Username </label>
 		<input
 			formControlName="username"
 			id="username"
@@ -19,9 +17,7 @@
 			*ngIf="username.touched && username.invalid"
 			class="alert alert-danger"
 		>
-			<div *ngIf="username.errors.required">
-				Username is required
-			</div>
+			<div *ngIf="username.errors.required">Username is required</div>
 			<div *ngIf="username.errors.minlength">
 				Username should be minimum
 				{{ username.errors.minlength.requiredLength }} characters.
@@ -29,12 +25,10 @@
 			<div *ngIf="username.errors.cannotContainSpace">
 				Username cannot contain space.
 			</div>
-			<div *ngIf="username.errors.isUsed">
-				Username is already taken.
-			</div>
+			<div *ngIf="username.errors.isUsed">Username is already taken.</div>
 		</div>
 	</div>
-	<div class="form-group">
+	<div class="mb-3">
 		<label for="password">Password</label>
 		<input
 			formControlName="password"
