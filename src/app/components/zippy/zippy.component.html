@@ -1,24 +1,24 @@
 <div class="accordion mb-3" id="accordionExample">
 	<div class="accordion-item">
-		<h2 class="accordion-header" id="headingOne">
+		<h2 class="accordion-header" [id]="'heading' + id">
 			<button
 				class="accordion-button"
 				type="button"
 				data-bs-toggle="collapse"
-				data-bs-target="#collapseOne"
-				aria-expanded="true"
-				aria-controls="collapseOne"
-				(click)="onClick()"
+				[attr.data-bs-target]="'#collapse' + id"
+				[attr.aria-expanded]="openAccordion[id]"
+				[attr.aria-controls]="'collapse' + id"
+				(click)="openAccordion[id] = !openAccordion[id]"
 			>
 				{{ title }}
 			</button>
 		</h2>
 
 		<div
-			id="collapseOne"
+			[id]="'collapse' + id"
 			class="accordion-collapse collapse"
-			[ngClass]="{ show: isExpanded }"
-			aria-labelledby="headingOne"
+			[class.show]="openAccordion[id]"
+			[attr.aria-labelledby]="'heading' + id"
 			data-bs-parent="#accordionExample"
 		>
 			<div class="accordion-body">
